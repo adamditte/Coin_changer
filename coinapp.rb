@@ -1,4 +1,4 @@
-require_relative 'Coin_changer.rb'
+require_relative 'coin_changer.rb'
 
 require 'sinatra'
 
@@ -31,7 +31,7 @@ end
 
 post '/deposit' do
 	pin = params[:pin]
-	name = params[:retrieved_name]
+	name = params[:name]
 	deposit = params[:deposit]
 	coins = change(deposit.to_i)
 	stuff = hashconverter(coins)

@@ -1,6 +1,7 @@
 Thank You <%= name %>. How much would you like to deposit today?
 
 <form method = "post" action = "/deposit">
+		<input type="text" name = "name" value = <%= name %> hidden>
 		<input type = "number" min = 0 name = "deposit">
 		<input type = "submit">
 </form>
