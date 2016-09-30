@@ -1,4 +1,4 @@
-require_relative 'coin_changer.rb'
+require_relative 'coincalculator.rb'
 
 require 'sinatra'
 
